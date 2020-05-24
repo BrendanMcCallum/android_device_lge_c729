@@ -13,7 +13,7 @@
 # limitations under the License.
 
 #
-# LG Univa Q/c800 physical qwerty keyboard
+# LG Univa Q/c729 physical qwerty keyboard
 #
 
 device.internal = 1

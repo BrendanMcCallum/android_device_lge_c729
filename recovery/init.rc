@@ -1,7 +1,7 @@
-# LG C800 recovery init.rc
+# LG C729 recovery init.rc
 # by chui101
 
-# import the usb.rc (copy of init.lgc800.usb.rc) so we have usb modes configurable from userspace
+# import the usb.rc (copy of init.lgc729.usb.rc) so we have usb modes configurable from userspace
 import usb.rc
 
 on early-init

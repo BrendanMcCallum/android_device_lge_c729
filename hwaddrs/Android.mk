@@ -22,6 +22,6 @@ LOCAL_SRC_FILES := getmac.c
 
 LOCAL_PRELINK_MODULE := false
 LOCAL_SHARED_LIBRARIES := libcutils libnv liboncrpc
-LOCAL_MODULE := hwaddrs.lgc800
+LOCAL_MODULE := hwaddrs.lgc729
 
 include $(BUILD_EXECUTABLE)

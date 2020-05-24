@@ -25,7 +25,7 @@
 # against the traditional rules of inheritance).
 
 # inherit from the proprietary version
--include vendor/lge/c800/BoardConfigVendor.mk
+-include vendor/lge/c729/BoardConfigVendor.mk
 
 USE_CAMERA_STUB := false
 
@@ -42,10 +42,10 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
-TARGET_SPECIFIC_HEADER_PATH := device/lge/c800/include
+TARGET_SPECIFIC_HEADER_PATH := device/lge/c729/include
 
-TARGET_OTA_ASSERT_DEVICE:=lgc800
-TARGET_BOOTLOADER_BOARD_NAME := lgc800
+TARGET_OTA_ASSERT_DEVICE:=lgc729
+TARGET_BOOTLOADER_BOARD_NAME := lgc729
 
 
 # Wifi related defines
@@ -82,12 +82,12 @@ BOARD_USES_QCOM_AUDIO_RESETALL := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
-BOARD_EGL_CFG := device/lge/c800/configs/egl.cfg
+BOARD_EGL_CFG := device/lge/c729/configs/egl.cfg
 
 BOARD_USES_QCOM_LIBRPC := true
 BOARD_USES_QCOM_GPS := true
 
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := lgc800
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := lgc729
 # AMSS version to use for GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
 
@@ -115,20 +115,20 @@ BOARD_USES_RECOVERY_CHARGEMODE := false
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
 # Try to build the kernel
-# TARGET_KERNEL_CONFIG := cyanogen_c800_defconfig
+# TARGET_KERNEL_CONFIG := cyanogen_c729_defconfig
 # TARGET_KERNEL_SOURCE := kernel/lge/msm7x30
 # Keep this as a fallback
-TARGET_PREBUILT_KERNEL := device/lge/c800/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := device/lge/c729/prebuilt/kernel
 
-BOARD_KERNEL_CMDLINE := console=ttyMSM1 androidboot.hardware=lgc800
+BOARD_KERNEL_CMDLINE := console=ttyMSM1 androidboot.hardware=lgc729
 BOARD_KERNEL_RECOVERY_CMDLINE := $(BOARD_KERNEL_CMDLINE)
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_KERNEL_PAGE_SIZE := 4096
 
 
 # Recovery Graphics
-BOARD_CUSTOM_GRAPHICS := ../../../device/lge/c800/recovery/graphics.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/lge/c729/recovery/graphics.c
 # Recovery Keys
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/lge/c800/recovery/recovery_keys.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/lge/c729/recovery/recovery_keys.c
 # Recovery init
-TARGET_RECOVERY_INITRC := device/lge/c800/recovery/init.rc
+TARGET_RECOVERY_INITRC := device/lge/c729/recovery/init.rc

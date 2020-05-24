@@ -27,4 +27,4 @@ include $(CLEAR_VARS)
 ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
 
 # include the non-open-source counterpart to this file
--include vendor/lge/c800/AndroidBoardVendor.mk
+-include vendor/lge/c729/AndroidBoardVendor.mk

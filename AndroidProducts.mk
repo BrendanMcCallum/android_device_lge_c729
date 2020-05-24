@@ -18,4 +18,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_c800.mk
+    $(LOCAL_DIR)/full_c729.mk

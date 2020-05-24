@@ -34,12 +34,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 # Inherit from device tree (Univa Q)
-$(call inherit-product, device/lge/c800/device.mk)
+$(call inherit-product, device/lge/c729/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := lge_univa_q
-PRODUCT_DEVICE := lgc800
+PRODUCT_DEVICE := lgc729
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
-PRODUCT_MODEL := LG-C800
-TARGET_DEVICE := lgc800
+PRODUCT_MODEL := LG-C729
+TARGET_DEVICE := lgc729

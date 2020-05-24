@@ -1,4 +1,4 @@
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),lgc800)
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),lgc729)
 
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
