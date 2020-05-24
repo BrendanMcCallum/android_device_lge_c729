@@ -13,9 +13,18 @@
 # limitations under the License.
 
 #
-# This file lists the product definition files that define
-# configurations which are actually buildable (e.g. through lunch)
+# AndroidBoard.mk is a legacy mechanism to deal with a few
+# edge-cases that can't be managed otherwise. No new rules
+# should be added to this file.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_c800.mk
+LOCAL_PATH := $(call my-dir)
+
+# Least specific includes go first, so that they can get
+# overridden further down
+include $(CLEAR_VARS)
+
+ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
+
+# include the non-open-source counterpart to this file
+-include vendor/lge/c800/AndroidBoardVendor.mk

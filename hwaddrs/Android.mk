@@ -1,4 +1,4 @@
-# Copyright (C) 2009 The Android Open Source Project
+# Copyright (C) 2011 The CyanogenMod project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,10 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#
-# This file lists the product definition files that define
-# configurations which are actually buildable (e.g. through lunch)
-#
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_c800.mk
+LOCAL_PATH:= $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_MODULE_TAGS := optional
+
+LOCAL_SRC_FILES := getmac.c
+
+LOCAL_PRELINK_MODULE := false
+LOCAL_SHARED_LIBRARIES := libcutils libnv liboncrpc
+LOCAL_MODULE := hwaddrs.lgc800
+
+include $(BUILD_EXECUTABLE)

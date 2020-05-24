@@ -1,4 +1,4 @@
-# Copyright (C) 2009 The Android Open Source Project
+# Copyright (C) 2008 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,10 +12,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#
-# This file lists the product definition files that define
-# configurations which are actually buildable (e.g. through lunch)
-#
+LOCAL_PATH:= $(call my-dir)
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_c800.mk
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),lgc800)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := lights.lgc800
+
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
+
+LOCAL_MODULE_TAGS := optional
+
+LOCAL_SRC_FILES := lights.c
+LOCAL_SHARED_LIBRARIES := liblog
+LOCAL_PRELINK_MODULE := false
+
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_SHARED_LIBRARY)
+
+endif # TARGET_BOOTLOADER_BOARD_NAME

@@ -1,4 +1,4 @@
-# Copyright (C) 2009 The Android Open Source Project
+# Copyright (C) 2010 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,9 +13,12 @@
 # limitations under the License.
 
 #
-# This file lists the product definition files that define
-# configurations which are actually buildable (e.g. through lunch)
+# LG ATCMD Virtual Keyboard 
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_c800.mk
+device.internal = 1
+keyboard.builtIn = 0
+
+keyboard.layout = gpio-sidekey-device
+keyboard.characterMap = gpio-sidekey-device
+keyboard.orientationAware = 1
