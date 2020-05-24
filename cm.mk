@@ -1,6 +1,6 @@
 $(call inherit-product, device/lge/c729/full_c729.mk)
 
-PRODUCT_RELEASE_NAME := UnivaQ
+PRODUCT_RELEASE_NAME := Flip
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
