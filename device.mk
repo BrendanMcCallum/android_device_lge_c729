@@ -215,9 +215,9 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 
-#BOARD_WLAN_DEVICE_REV := bcm4330_b1
+#BOARD_WLAN_DEVICE_REV := bcm4329_b1
 #WIFI_BAND             := 802_11_ABG
-#$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
+#$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
 
 # The gps config appropriate for this device
 PRODUCT_COPY_FILES += device/common/gps/gps.conf_US:system/etc/gps.conf

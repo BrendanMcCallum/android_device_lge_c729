@@ -49,7 +49,7 @@ TARGET_BOOTLOADER_BOARD_NAME := lgc729
 
 
 # Wifi related defines
-BOARD_WLAN_DEVICE := bcm4330
+BOARD_WLAN_DEVICE := bcm4329
 WIFI_DRIVER_FW_PATH_STA         := "/system/etc/firmware/rtecdc.bin"
 WIFI_DRIVER_FW_PATH_AP          := "/system/etc/firmware/rtecdc-apsta.bin"
 WIFI_DRIVER_MODULE_NAME         := "wireless"
