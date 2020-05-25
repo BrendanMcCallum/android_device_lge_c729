@@ -138,7 +138,6 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/lge/c729/recovery/recovery_keys
 # Recovery init
 TARGET_RECOVERY_INITRC := device/lge/c729/recovery/init.rc
 
-OUT_DIR := out
 
 #twrp
 TW_THEME := portrait_mdpi
