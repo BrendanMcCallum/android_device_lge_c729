@@ -18,4 +18,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_c729.mk
+    $(LOCAL_DIR)/omni_c729.mk
+
+COMMON_LUNCH_CHOICES := \
+    omni_c729-userdebug \
+    omni_c729-eng

@@ -16,8 +16,8 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-PRODUCT_AAPT_CONFIG := normal mdpi
-PRODUCT_AAPT_PREF_CONFIG := mdpi
+PRODUCT_AAPT_CONFIG := normal mdpi ldpi
+PRODUCT_AAPT_PREF_CONFIG := ldpi
 
 PRODUCT_COPY_FILES += \
     device/lge/c729/init.lgc729.rc:root/init.lgc729.rc \
@@ -213,7 +213,7 @@ PRODUCT_COPY_FILES += \
     device/lge/c729/prebuilt/modules/wireless.ko:system/lib/modules/wireless.ko
     
 
-$(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
+#$(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 
 #BOARD_WLAN_DEVICE_REV := bcm4329_b1
 #WIFI_BAND             := 802_11_ABG

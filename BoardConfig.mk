@@ -33,11 +33,16 @@ TARGET_NO_BOOTLOADER := true
 
 TARGET_BOARD_PLATFORM := msm7x30
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
+TARGET_ARCH := arm
 
+TARGET_CPU_VARIANT := scorpion
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
+
+TARGET_SCREEN_WIDTH := 320
+TARGET_SCREEN_HEIGHT := 480
 
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
@@ -132,3 +137,5 @@ BOARD_CUSTOM_GRAPHICS := ../../../device/lge/c729/recovery/graphics.c
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/lge/c729/recovery/recovery_keys.c
 # Recovery init
 TARGET_RECOVERY_INITRC := device/lge/c729/recovery/init.rc
+
+OUT_DIR := out
